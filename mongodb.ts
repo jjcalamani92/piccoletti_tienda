@@ -12,8 +12,8 @@ if (!MONGODB_DB) {
 	throw new Error("Define the MONGODB_DB environmental variable");
 }
 
-let cachedClient = null;
-let cachedDb = null;
+let cachedClient: any = null;
+let cachedDb: any = null;
 
 export async function connectToDatabase() {
 	// check the cached.
