@@ -1,6 +1,7 @@
-import { Fragment, useState } from "react";
+import { Fragment, useContext, useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import { XIcon } from "@heroicons/react/outline";
+import { UiContext } from "../context";
 
 const products = [
 	{
@@ -32,9 +33,11 @@ const products = [
 
 export const Cart = () => {
 	const [open, setOpen] = useState(false);
+
+	const { isMenuOpen, toggleSideMenu } = useContext(UiContext);
 	return (
-		<Transition.Root show={open} as={Fragment}>
-			<Dialog as="div" className="relative z-10" onClose={setOpen}>
+		<Transition.Root show={isMenuOpen} as={Fragment}>
+			<Dialog as="div" className="relative z-10" onClose={toggleSideMenu}>
 				<Transition.Child
 					as={Fragment}
 					enter="ease-in-out duration-500"
@@ -71,7 +74,7 @@ export const Cart = () => {
 													<button
 														type="button"
 														className="-m-2 p-2 text-gray-400 hover:text-gray-500"
-														onClick={() => setOpen(false)}
+														onClick={toggleSideMenu}
 													>
 														<span className="sr-only">Close panel</span>
 														<XIcon className="h-6 w-6" aria-hidden="true" />
@@ -118,7 +121,7 @@ export const Cart = () => {
 																		<div className="flex">
 																			<button
 																				type="button"
-																				className="font-medium text-indigo-600 hover:text-indigo-500"
+																				className="font-medium text-primaryColor hover:text-darkPrimaryColor"
 																			>
 																				Remove
 																			</button>
@@ -143,7 +146,7 @@ export const Cart = () => {
 											<div className="mt-6">
 												<a
 													href="#"
-													className="flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-700"
+													className="flex items-center justify-center rounded-md border border-transparent bg-primaryColor px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-darkPrimaryColor"
 												>
 													Checkout
 												</a>
@@ -153,8 +156,8 @@ export const Cart = () => {
 													or{" "}
 													<button
 														type="button"
-														className="font-medium text-indigo-600 hover:text-indigo-500"
-														onClick={() => setOpen(false)}
+														className="font-medium text-primaryColor hover:text-darkPrimaryColor"
+														onClick={toggleSideMenu}
 													>
 														Continue Shopping
 														<span aria-hidden="true"> &rarr;</span>

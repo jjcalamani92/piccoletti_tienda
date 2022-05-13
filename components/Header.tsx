@@ -1,5 +1,5 @@
 /* This example requires Tailwind CSS v2.0+ */
-import { Fragment, useState } from "react";
+import { Fragment, useContext, useState } from "react";
 import { Dialog, Popover, Tab, Transition } from "@headlessui/react";
 import {
 	MenuIcon,
@@ -7,6 +7,7 @@ import {
 	ShoppingBagIcon,
 	XIcon
 } from "@heroicons/react/outline";
+import { UiContext } from "../context";
 
 const navigation = {
 	categories: [
@@ -142,7 +143,9 @@ function classNames(...classes: string[]) {
 }
 
 export const Header = () => {
+	const { isMenuOpen, toggleSideMenu } = useContext(UiContext);
 	const [open, setOpen] = useState(false);
+
 	return (
 		<div className="bg-white">
 			{/* Mobile menu */}
@@ -522,6 +525,7 @@ export const Header = () => {
 										<ShoppingBagIcon
 											className="flex-shrink-0 h-6 w-6 text-gray-400 group-hover:text-gray-500"
 											aria-hidden="true"
+											onClick={toggleSideMenu}
 										/>
 										<span className="ml-2 text-sm font-medium text-gray-700 group-hover:text-gray-800">
 											0
