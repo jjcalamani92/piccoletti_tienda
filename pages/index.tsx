@@ -1,15 +1,6 @@
 import type { NextPage } from "next";
 import { Layout, Quickviews } from "../components";
-import {
-	Category,
-	Cookies,
-	Detail,
-	FAQs,
-	Features,
-	Home,
-	Product,
-	Promo
-} from "../layouts";
+import { Cookies, FAQs, Features, Home, Promo } from "../layouts";
 
 const Index: NextPage = () => {
 	return (
