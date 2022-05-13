@@ -137,7 +137,7 @@ const navigation = {
 		{ name: "Stores", href: "#" }
 	]
 };
-function classNames(...classes: boolean[]) {
+function classNames(...classes: any[]) {
 	return classes.filter(Boolean).join(" ");
 }
 
