@@ -1,9 +1,12 @@
 export const Cookies = () => {
+	const showMenu = () => {
+		console.log("hola");
+	};
 	return (
 		<div>
 			<div className="relative flex justify-center items-center z-40 ">
 				<button
-					onClick="showMenu(true)"
+					onClick={showMenu}
 					className="focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 focus:outline-none absolute z-0 top-48 py-2 px-7 bg-gray-800 text-white rounded text-base hover:bg-black"
 				>
 					Open
@@ -171,7 +174,7 @@ export const Cookies = () => {
 								No.. estoy a dieta
 							</a>
 							<button
-								onClick="showMenu(true)"
+								onClick={showMenu}
 								className=" absolute top-8 right-8 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800"
 								aria-label="close"
 							>
