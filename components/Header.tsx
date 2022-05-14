@@ -380,7 +380,7 @@ export const Header = () => {
 											onClick={toggleSideMenu}
 										/>
 										<span className="ml-2 text-sm font-medium text-gray-700 group-hover:text-gray-800">
-											1
+											2
 										</span>
 										<span className="sr-only">items in cart, view bag</span>
 									</a>
