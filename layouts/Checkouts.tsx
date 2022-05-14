@@ -157,10 +157,7 @@ export const CheckoutsLayout = () => {
 							</label>
 							<div className="mt-2 flex-col">
 								<div className="relative">
-									<button
-										className="text-left border rounded-tr rounded-tl border-gray-300 p-4 w-full text-base leading-4 placeholder-gray-600 text-gray-600 bg-white"
-										type="email"
-									>
+									<button className="text-left border rounded-tr rounded-tl border-gray-300 p-4 w-full text-base leading-4 placeholder-gray-600 text-gray-600 bg-white">
 										{country}
 									</button>
 									<svg
