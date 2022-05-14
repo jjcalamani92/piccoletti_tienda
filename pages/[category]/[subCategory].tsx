@@ -1,7 +1,7 @@
 import { GetStaticPaths, GetStaticProps, NextPage } from "next";
 import { useProduct } from "../../hooks";
 import { useRouter } from "next/router";
-import { Layout } from "../../components";
+import { Heading, Layout } from "../../components";
 import { ProductLayout } from "../../layouts";
 
 interface Props {
@@ -21,6 +21,7 @@ const ProductPage: NextPage<Props> = ({ subcategory }) => {
 			title={"Choco - Stores"}
 			pageDescription={"Encuentra tu ropa favorita"}
 		>
+			<Heading />
 			<ProductLayout
 				products={products}
 				isLoading={isLoading}

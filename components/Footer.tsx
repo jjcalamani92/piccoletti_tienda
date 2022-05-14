@@ -26,7 +26,7 @@ export const Footer = () => {
 						All rights reserved
 					</p>
 					<div className="flex items-center gap-x-4 mt-12">
-						<div className="opacity-50 w-8 h-8 flex-shrink-0 bg-gray-800 cursor-pointer hover:bg-gray-700 rounded-full flex items-center justify-center">
+						<div className="opacity-50 w-8 h-8 flex-shrink-0 bg-primaryColor cursor-pointer hover:bg-darkPrimaryColor rounded-full flex items-center justify-center">
 							<svg
 								width="18"
 								height="17"
@@ -42,7 +42,7 @@ export const Footer = () => {
 								/>
 							</svg>
 						</div>
-						<div className="opacity-50 w-8 h-8 flex-shrink-0 bg-gray-800 cursor-pointer hover:bg-gray-700 rounded-full flex items-center justify-center">
+						<div className="opacity-50 w-8 h-8 flex-shrink-0 bg-primaryColor cursor-pointer hover:bg-darkPrimaryColor  rounded-full flex items-center justify-center">
 							<svg
 								width="16"
 								height="13"
@@ -101,14 +101,14 @@ export const Footer = () => {
 					<label className="text-xl font-medium leading-5 text-gray-800">
 						Get updates
 					</label>
-					<div className="cursor-pointer flex items-center justify-between border border-gray-800 mt-4">
+					<div className="cursor-pointer flex items-center justify-between border border-primaryColor mt-4">
 						<input
 							type="text"
 							className="text-base leading-4 p-4 w-full focus:outline-none text-gray-800 placeholder-gray-800"
 							placeholder="Enter your email"
 						/>
 						<svg
-							className="mr-4 fill-current text-gray-800 hover:text-gray-500"
+							className="mr-4 fill-current text-primaryColor hover:text-darkPrimaryColor"
 							width="16"
 							height="17"
 							viewBox="0 0 16 17"

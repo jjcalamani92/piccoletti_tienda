@@ -2,6 +2,7 @@ import { FC, useState } from "react";
 import { StarIcon } from "@heroicons/react/solid";
 import { RadioGroup } from "@headlessui/react";
 import { IProduct } from "../interfaces";
+import { SwiperComponent } from "../components";
 
 const Product = {
 	name: "Basic Tee 6-Pack",
@@ -124,7 +125,10 @@ export const DetailLayout: FC<Props> = ({
 				</nav>
 
 				{/* Image gallery */}
-				<div className="mt-6 max-w-2xl mx-auto sm:px-6 lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-3 lg:gap-x-8">
+				<div className="mt-6 max-w-2xl mx-auto">
+					<SwiperComponent image={product.image} />
+				</div>
+				{/* <div className="mt-6 max-w-2xl mx-auto sm:px-6 lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-3 lg:gap-x-8">
 					<div className="hidden aspect-w-3 aspect-h-4 rounded-lg overflow-hidden lg:block">
 						<img
 							src={product.image[0]}
@@ -135,14 +139,14 @@ export const DetailLayout: FC<Props> = ({
 					<div className="hidden lg:grid lg:grid-cols-1 lg:gap-y-8">
 						<div className="aspect-w-3 aspect-h-2 rounded-lg overflow-hidden">
 							<img
-								src={product.image[0]}
+								src={product.image[1]}
 								alt={product.title}
 								className="w-full h-full object-center object-cover"
 							/>
 						</div>
 						<div className="aspect-w-3 aspect-h-2 rounded-lg overflow-hidden">
 							<img
-								src={product.image[0]}
+								src={product.image[2]}
 								alt={product.title}
 								className="w-full h-full object-center object-cover"
 							/>
@@ -150,12 +154,12 @@ export const DetailLayout: FC<Props> = ({
 					</div>
 					<div className="aspect-w-4 aspect-h-5 sm:rounded-lg sm:overflow-hidden lg:aspect-w-3 lg:aspect-h-4">
 						<img
-							src={product.image[0]}
+							src={product.image[3]}
 							alt={product.title}
 							className="w-full h-full object-center object-cover"
 						/>
 					</div>
-				</div>
+				</div> */}
 
 				{/* Product info */}
 				<div className="max-w-2xl mx-auto pt-10 pb-16 px-4 sm:px-6 lg:max-w-7xl lg:pt-16 lg:pb-24 lg:px-8 lg:grid lg:grid-cols-3 lg:grid-rows-[auto,auto,1fr] lg:gap-x-8">

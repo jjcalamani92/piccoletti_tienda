@@ -1,6 +1,19 @@
 import type { NextPage } from "next";
-import { Layout, Quickviews } from "../components";
-import { Cookies, FAQs, Features, Home, Promo } from "../layouts";
+import { Layout, Quickviews, SwiperComponent } from "../components";
+import {
+	BlogsLayout,
+	ContactLayout,
+	Cookies,
+	ErrorLayout,
+	FAQs,
+	Features,
+	Home,
+	PricingLayout,
+	Promo,
+	TeamLayout,
+	TestimonialLayout,
+	PrivacyAndTermsLayout
+} from "../layouts";
 
 const Index: NextPage = () => {
 	return (
@@ -8,7 +21,13 @@ const Index: NextPage = () => {
 			title={"Choco - Store"}
 			pageDescription={"Encuentra tu ropa favorita"}
 		>
-			{/* <Home /> */}
+			{/* <Home />
+			<ContactLayout /> */}
+			{/* <TestimonialLayout /> */}
+			{/* <TeamLayout /> */}
+			{/* <PricingLayout /> */}
+			{/* <ErrorLayout /> */}
+			<PrivacyAndTermsLayout />
 			{/* <Detail /> */}
 			{/* <Product /> */}
 			{/* <Category /> */}
@@ -16,7 +35,6 @@ const Index: NextPage = () => {
 			{/* <Features /> */}
 			{/* <Promo /> */}
 			{/* <FAQs /> */}
-			{/* <Cookies /> */}
 		</Layout>
 	);
 };

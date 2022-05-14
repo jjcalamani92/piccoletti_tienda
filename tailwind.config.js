@@ -13,7 +13,10 @@ module.exports = {
 				primaryText: "#212121",
 				secondaryText: "#757575",
 				accentColor: "#FF5252",
-				backgroundColor: "#eee"
+				backgroundColor: "#eee",
+				dividerColor: "#BDBDBD",
+				white: "#fff",
+				black: "#000"
 			}
 		}
 	},
