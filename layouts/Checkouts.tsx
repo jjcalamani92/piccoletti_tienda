@@ -4,7 +4,7 @@ export const CheckoutsLayout = () => {
 	const [menu, setMenu] = useState(false);
 	const [country, setCountry] = useState("United States");
 
-	const changeText = (e) => {
+	const changeText = (e: any) => {
 		setMenu(false);
 		setCountry(e.target.textContent);
 	};
