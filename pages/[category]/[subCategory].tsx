@@ -1,20 +1,38 @@
 import { GetStaticPaths, GetStaticProps, NextPage } from "next";
-import { useProduct } from "../../hooks";
 import { useRouter } from "next/router";
 import { Heading, Layout } from "../../components";
 import { ProductLayout } from "../../layouts";
+import useSWR from "swr";
+import fetch from "../../libs/fetch";
+
+const query = {
+	query: "query { getWearproducts { title image price slug } }"
+};
+
+const getData = async (...args: any[]) => {
+	return await fetch(query);
+};
 
 interface Props {
 	subcategory: string;
 }
 
 const ProductPage: NextPage<Props> = ({ subcategory }) => {
-	const router = useRouter();
-	const { category } = router.query;
+	const { data, error } = useSWR(query, getData);
+	if (error) {
+		return <div>Error...</div>;
+	}
+	if (!data) {
+		return <div>Loading...</div>;
+	}
+	console.log(data.getWearproducts);
 
-	const { products, isLoading } = useProduct(
-		`/wearproducts?category=${category}`
-	);
+	// const router = useRouter();
+	// const { category } = router.query;
+
+	// const { products, isLoading } = useProduct(
+	// 	`/wearproducts?category=${category}`
+	// );
 	// const Products = getProductBySubCategory(products, subcategory);
 	return (
 		<Layout
@@ -22,11 +40,7 @@ const ProductPage: NextPage<Props> = ({ subcategory }) => {
 			pageDescription={"Encuentra tu ropa favorita"}
 		>
 			<Heading />
-			<ProductLayout
-				products={products}
-				isLoading={isLoading}
-				title={subcategory}
-			/>
+			<ProductLayout products={data.getWearproducts} title={subcategory} />
 		</Layout>
 	);
 };

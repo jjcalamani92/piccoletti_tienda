@@ -2,7 +2,7 @@
 	"title": "Piccoletti",
 	"logo": "https://res.cloudinary.com/dvcyhn0lj/image/upload/v1647095547/piccoletti-logo_j6hxbw.jpg",
 	"pages": [
-		{ "name": "Company", "href": "#" },
+		{ "name": "Categorias", "href": "#" },
 		{ "name": "Stores", "href": "#" }
 	],
 	"header": [
@@ -199,6 +199,62 @@
 					]
 				}
 			]
+		}
+	],
+	"category": [
+		{
+			"title": "Desk and Office",
+			"description": "Work from home accessories",
+			"image": [
+				"https://cdn.pixabay.com/photo/2016/11/29/12/51/adult-1869621_960_720.jpg"
+			],
+			"imageAlt": "Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.",
+			"href": "#"
+		},
+		{
+			"title": "Self-Improvement",
+			"description": "Journals and note-taking",
+			"image": [
+				"https://tailwindui.com/img/ecommerce-images/home-page-02-edition-02.jpg"
+			],
+			"imageAlt": "Wood table with porcelain mug, leather journal, brass pen, leather key ring, and a houseplant.",
+			"href": "#"
+		},
+		{
+			"title": "Travel",
+			"description": "Daily commute essentials",
+			"image": [
+				"https://tailwindui.com/img/ecommerce-images/home-page-02-edition-03.jpg"
+			],
+			"imageAlt": "Collection of four insulated travel bottles on wooden shelf.",
+			"href": "#"
+		},
+		{
+			"title": "Travel",
+			"description": "Daily commute essentials",
+			"image": [
+				"https://tailwindui.com/img/ecommerce-images/home-page-02-edition-03.jpg"
+			],
+			"imageAlt": "Collection of four insulated travel bottles on wooden shelf.",
+			"href": "#"
+		},
+		{
+			"title": "Desk and Office",
+			"description": "Work from home accessories",
+			"image": [
+				"https://tailwindui.com/img/ecommerce-images/home-page-02-edition-01.jpg"
+			],
+			"imageAlt": "Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.",
+			"href": "#"
+		},
+		{
+			"title": "Self-Improvement",
+			"description": "Journals and note-taking",
+			"image": [
+				"https://tailwindui.com/img/ecommerce-images/home-page-02-edition-02.jpg"
+			],
+			"imageAlt": "Wood table with porcelain mug, leather journal, brass pen, leather key ring, and a houseplant.",
+			"href": "#"
 		}
 	]
 }

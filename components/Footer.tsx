@@ -127,7 +127,7 @@ export const Footer = () => {
 				<label className="text-xl font-medium leading-5 text-gray-800">
 					Get updates
 				</label>
-				<div className="flex items-center justify-between border border-gray-800 mt-4">
+				<div className="flex items-center justify-between border border border-primaryColor mt-4">
 					<input
 						type="text"
 						className="text-base leading-4 p-4 relative z-0 w-full focus:outline-none text-gray-800 placeholder-gray-800"
@@ -135,7 +135,7 @@ export const Footer = () => {
 					/>
 					<div className="cursor-pointer mr-4 cursor-pointer relative z-40">
 						<svg
-							className="fill-current text-gray-800 hover:text-gray-500"
+							className="fill-current text-primaryColor hover:text-darkPrimaryColor"
 							width="16"
 							height="17"
 							viewBox="0 0 16 17"

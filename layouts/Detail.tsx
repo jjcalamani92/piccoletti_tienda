@@ -68,17 +68,9 @@ function classNames(...classes: string[]) {
 
 interface Props {
 	product: IProduct;
-	products: IProduct[];
-	isLoading: boolean;
-	subCategory: string;
 }
 
-export const DetailLayout: FC<Props> = ({
-	product,
-	products,
-	isLoading,
-	subCategory
-}) => {
+export const DetailLayout: FC<Props> = ({ product }) => {
 	const [selectedColor, setSelectedColor] = useState(Product.colors[0]);
 	const [selectedSize, setSelectedSize] = useState(Product.sizes[2]);
 	return (
@@ -172,7 +164,7 @@ export const DetailLayout: FC<Props> = ({
 					{/* Options */}
 					<div className="mt-4 lg:mt-0 lg:row-span-3">
 						<h2 className="sr-only">Product information</h2>
-						<p className="text-3xl text-gray-900">{product.price}</p>
+						<p className="text-3xl text-gray-900">{product.price} Bs</p>
 
 						{/* Reviews */}
 						<div className="mt-6">
@@ -248,12 +240,12 @@ export const DetailLayout: FC<Props> = ({
 							{/* Sizes */}
 							<div className="mt-10">
 								<div className="flex items-center justify-between">
-									<h3 className="text-sm text-gray-900 font-medium">Size</h3>
+									<h3 className="text-sm text-gray-900 font-medium">Tallas</h3>
 									<a
 										href="#"
 										className="text-sm font-medium text-primaryColor hover:text-darkPrimaryColor"
 									>
-										Size guide
+										Guia de tallas
 									</a>
 								</div>
 
@@ -330,7 +322,7 @@ export const DetailLayout: FC<Props> = ({
 								type="submit"
 								className="mt-10 w-full bg-primaryColor border border-transparent rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-white hover:bg-darkPrimaryColor focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-darkPrimaryColor"
 							>
-								Add to bag
+								Agregar al Carrito
 							</button>
 						</form>
 					</div>
@@ -346,7 +338,7 @@ export const DetailLayout: FC<Props> = ({
 						</div>
 
 						<div className="mt-10">
-							<h3 className="text-sm font-medium text-gray-900">Highlights</h3>
+							<h3 className="text-sm font-medium text-gray-900">Reflejos</h3>
 
 							<div className="mt-4">
 								<ul role="list" className="pl-4 list-disc text-sm space-y-2">
@@ -360,7 +352,7 @@ export const DetailLayout: FC<Props> = ({
 						</div>
 
 						<div className="mt-10">
-							<h2 className="text-sm font-medium text-gray-900">Details</h2>
+							<h2 className="text-sm font-medium text-gray-900">Detalles</h2>
 
 							<div className="mt-4 space-y-6">
 								<p className="text-sm text-gray-600">{Product.details}</p>

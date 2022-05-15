@@ -3,7 +3,7 @@ export const PrivacyAndTermsLayout = () => {
 		// <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:max-w-7xl lg:px-8">
 		// <section className="px-4 py-24 mx-auto max-w-7xl ">
 		<section className=" mx-auto px-4 max-w-2xl sm:px-6 ">
-			<div className="my-6 text-left md:text-center">
+			<div className="my-6 text-center">
 				<h1 className="mb-4 text-4xl font-bold leading-tight text-gray-900 md:text-5xl">
 					Privacy Policy
 				</h1>
@@ -15,11 +15,11 @@ export const PrivacyAndTermsLayout = () => {
 				<h2 id="1legalnotices" className="text-2xl font-bold">
 					1. Legal Notices
 				</h2>
-				<p>
+				<p className="text-gray-500">
 					We, the Operators of this Website, provide it as a public service to
 					our users.
 				</p>
-				<p>
+				<p className="text-gray-500">
 					Please carefully review the following basic rules that govern your use
 					of the Website. Please note that your use of the Website constitutes
 					your unconditional agreement to follow and be bound by these Terms and
@@ -27,7 +27,7 @@ export const PrivacyAndTermsLayout = () => {
 					use the Website, provide any materials to the Website or download any
 					materials from them.
 				</p>
-				<p>
+				<p className="text-gray-500">
 					The Operators reserve the right to update or modify these Terms and
 					Conditions at any time without prior notice to User. Your use of the
 					Website following any such change constitutes your unconditional
@@ -35,7 +35,7 @@ export const PrivacyAndTermsLayout = () => {
 					changed. For this reason, we encourage you to review these Terms and
 					Conditions of Use whenever you use the Website.
 				</p>
-				<p>
+				<p className="text-gray-500">
 					These Terms and Conditions of Use apply to the use of the Website and
 					do not extend to any linked third party sites. These Terms and
 					Conditions and our Privacy Policy, which are hereby incorporated by
@@ -46,7 +46,7 @@ export const PrivacyAndTermsLayout = () => {
 				<h2 id="2permittedandprohibiteduses" className="text-2xl font-bold">
 					2. Permitted and Prohibited Uses
 				</h2>
-				<p>
+				<p className="text-gray-500">
 					You may use the the Website for the sole purpose of sharing and
 					exchanging ideas with other Users. You may not use the the Website to
 					violate any applicable local, state, national, or international law,
@@ -57,20 +57,20 @@ export const PrivacyAndTermsLayout = () => {
 					exchange, and any U.S. laws, rules, and regulations governing the
 					export and re-export of commodities or technical data.
 				</p>
-				<p>
+				<p className="text-gray-500">
 					You may not upload or transmit any material that infringes or
 					misappropriates any person's copyright, patent, trademark, or trade
 					secret, or disclose via the the Website any information the disclosure
 					of which would constitute a violation of any confidentiality
 					obligations you may have.
 				</p>
-				<p>
+				<p className="text-gray-500">
 					You may not upload any viruses, worms, Trojan horses, or other forms
 					of harmful computer code, nor subject the Website's network or servers
 					to unreasonable traffic loads, or otherwise engage in conduct deemed
 					disruptive to the ordinary operation of the Website.
 				</p>
-				<p>
+				<p className="text-gray-500">
 					You are strictly prohibited from communicating on or through the
 					Website any unlawful, harmful, offensive, threatening, abusive,
 					libelous, harassing, defamatory, vulgar, obscene, profane, hateful,
@@ -80,7 +80,7 @@ export const PrivacyAndTermsLayout = () => {
 					offense, give rise to civil liability, or otherwise violate any
 					applicable local, state, national, or international law.
 				</p>
-				<p>
+				<p className="text-gray-500">
 					You are expressly prohibited from compiling and using other Users'
 					personal information, including addresses, telephone numbers, fax
 					numbers, email addresses or other contact information that may appear
@@ -89,7 +89,7 @@ export const PrivacyAndTermsLayout = () => {
 					marketing materials, whether by facsimile, email, or other
 					technological means.
 				</p>
-				<p>
+				<p className="text-gray-500">
 					You also are expressly prohibited from distributing Users' personal
 					information to third-party parties for marketing purposes. The
 					Operators shall deem the compiling of marketing and mailing lists
@@ -101,7 +101,7 @@ export const PrivacyAndTermsLayout = () => {
 					Website and to suspend or revoke your membership in the consortium
 					without refund of any membership dues paid.
 				</p>
-				<p>
+				<p className="text-gray-500">
 					The Operators note that unauthorized use of Users' personal
 					information in connection with unsolicited marketing correspondence
 					also may constitute violations of various state and federal anti-spam
@@ -113,17 +113,17 @@ export const PrivacyAndTermsLayout = () => {
 				<h2 id="3usersubmissions" className="text-2xl font-bold">
 					3 User Submissions
 				</h2>
-				<p>
+				<p className="text-gray-500">
 					The Operators do not want to receive confidential or proprietary
 					information from you through the Website. Any material, information,
 					or other communication you transmit or post ("Contributions") to the
 					Website will be considered non-confidential.
 				</p>
-				<p>
+				<p className="text-gray-500">
 					All contributions to this site are licensed by you under the MIT
 					License to anyone who wishes to use them, including the Operators.
 				</p>
-				<p>
+				<p className="text-gray-500">
 					If you work for a company or at a University, it's likely that you're
 					not the copyright holder of anything you make, even in your free time.
 					Before making contributions to this site, get written permission from
@@ -132,7 +132,7 @@ export const PrivacyAndTermsLayout = () => {
 				<h2 id="4userdiscussionlistsandforums" className="text-2xl font-bold">
 					4. User Discussion Lists and Forums
 				</h2>
-				<p>
+				<p className="text-gray-500">
 					The Operators may, but are not obligated to, monitor or review any
 					areas on the Website where users transmit or post communications or
 					communicate solely with each other, including but not limited to user
@@ -149,12 +149,12 @@ export const PrivacyAndTermsLayout = () => {
 				>
 					5. Use of Personally Identifiable Information
 				</h2>
-				<p>
+				<p className="text-gray-500">
 					Information submitted to the Website is governed according to the
 					Operators’s current Privacy Policy and the stated license of this
 					website.
 				</p>
-				<p>
+				<p className="text-gray-500">
 					You agree to provide true, accurate, current, and complete information
 					when registering with the Website. It is your responsibility to
 					maintain and promptly update this account information to keep it true,
@@ -165,7 +165,7 @@ export const PrivacyAndTermsLayout = () => {
 					the right to suspend or terminate your account without notice and to
 					refuse any and all current and future use of the Website.
 				</p>
-				<p>
+				<p className="text-gray-500">
 					Although sections of the Website may be viewed simply by visiting the
 					Website, in order to access some Content and/or additional features
 					offered at the Website, you may need to sign on as a guest or register
@@ -191,7 +191,7 @@ export const PrivacyAndTermsLayout = () => {
 				<h2 id="6indemnification" className="text-2xl font-bold">
 					6. Indemnification
 				</h2>
-				<p>
+				<p className="text-gray-500">
 					You agree to defend, indemnify and hold harmless the Operators,
 					agents, vendors or suppliers from and against any and all claims,
 					damages, costs and expenses, including reasonable attorneys' fees,
@@ -204,7 +204,7 @@ export const PrivacyAndTermsLayout = () => {
 				<h2 id="7termination" className="text-2xl font-bold">
 					7. Termination
 				</h2>
-				<p>
+				<p className="text-gray-500">
 					These Terms and Conditions of Use are effective until terminated by
 					either party. If you no longer agree to be bound by these Terms and
 					Conditions, you must cease use of the Website. If you are dissatisfied
@@ -220,7 +220,7 @@ export const PrivacyAndTermsLayout = () => {
 					Use.
 				</p>
 				<h2 className="text-2xl font-bold">8. WARRANTY DISCLAIMER</h2>
-				<p>
+				<p className="text-gray-500">
 					THE WEBSITE AND ASSOCIATED MATERIALS ARE PROVIDED ON AN "AS IS" AND
 					"AS AVAILABLE" BASIS. TO THE FULL EXTENT PERMISSIBLE BY APPLICABLE
 					LAW, THE OPERATORS DISCLAIM ALL WARRANTIES, EXPRESS OR IMPLIED,
@@ -235,7 +235,7 @@ export const PrivacyAndTermsLayout = () => {
 					OR IMPLIED, AS TO THE OPERATION OF THE WEBSITE OR THE INFORMATION,
 					CONTENT, MATERIALS, OR PRODUCTS INCLUDED ON THE WEBSITE.
 				</p>
-				<p>
+				<p className="text-gray-500">
 					IN NO EVENT SHALL THE OPERATORS OR ANY OF THEIR AGENTS, VENDORS OR
 					SUPPLIERS BE LIABLE FOR ANY DAMAGES WHATSOEVER (INCLUDING, WITHOUT
 					LIMITATION, DAMAGES FOR LOSS OF PROFITS, BUSINESS INTERRUPTION, LOSS
@@ -246,7 +246,7 @@ export const PrivacyAndTermsLayout = () => {
 					EXCLUSION OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL
 					DAMAGES, THE ABOVE LIMITATION MAY NOT APPLY TO YOU.
 				</p>
-				<p>
+				<p className="text-gray-500">
 					YOU UNDERSTAND AND AGREE THAT ANY CONTENT DOWNLOADED OR OTHERWISE
 					OBTAINED THROUGH THE USE OF THE WEBSITE IS AT YOUR OWN DISCRETION AND
 					RISK AND THAT YOU WILL BE SOLELY RESPONSIBLE FOR ANY DAMAGE TO YOUR
@@ -262,7 +262,7 @@ export const PrivacyAndTermsLayout = () => {
 					BY YOUR USE OF THE THE WEBSITE, THAT YOUR USE OF THE WEBSITE IS AT
 					YOUR SOLE RISK.
 				</p>
-				<p>
+				<p className="text-gray-500">
 					LIABILITY LIMITATION. UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL OR
 					EQUITABLE THEORY, WHETHER IN TORT, CONTRACT, NEGLIGENCE, STRICT
 					LIABILITY OR OTHERWISE, SHALL THE OPERATORS OR ANY OF THEIR AGENTS,
@@ -278,7 +278,7 @@ export const PrivacyAndTermsLayout = () => {
 					REPRESENTATIVE OF THE OPERATORS HAS BEEN ADVISED OF OR SHOULD HAVE
 					KNOWN OF THE POSSIBILITY OF SUCH DAMAGES.
 				</p>
-				<p>
+				<p className="text-gray-500">
 					THE OPERATORS'S TOTAL CUMULATIVE LIABILITY FOR ANY AND ALL CLAIMS IN
 					CONNECTION WITH THE WEBSITE WILL NOT EXCEED FIVE U.S. DOLLARS ($5.00).
 					USER AGREES AND ACKNOWLEDGES THAT THE FOREGOING LIMITATIONS ON
@@ -288,7 +288,7 @@ export const PrivacyAndTermsLayout = () => {
 				<h2 id="9general" className="text-2xl font-bold">
 					9. General
 				</h2>
-				<p>
+				<p className="text-gray-500">
 					The Website is hosted in the United States. The Operators make no
 					claims that the Content on the Website is appropriate or may be
 					downloaded outside of the United States. Access to the Content may not
@@ -330,7 +330,7 @@ export const PrivacyAndTermsLayout = () => {
 				<h2 id="10linkstoothermaterials" className="text-2xl font-bold">
 					10. Links to Other Materials
 				</h2>
-				<p>
+				<p className="text-gray-500">
 					The Website may contain links to sites owned or operated by
 					independent third parties. These links are provided for your
 					convenience and reference only. We do not control such sites and,
@@ -354,7 +354,7 @@ export const PrivacyAndTermsLayout = () => {
 				>
 					11. Notification Of Possible Copyright Infringement
 				</h2>
-				<p>
+				<p className="text-gray-500">
 					In the event you believe that material or content published on the
 					Website may infringe on your copyright or that of another, please{" "}
 					<a href="#">Contact Us</a>.

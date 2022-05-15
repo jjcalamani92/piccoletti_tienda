@@ -101,7 +101,7 @@ export const Header = () => {
 																{item.name}
 															</a>
 															<p aria-hidden="true" className="mt-1">
-																Shop now
+																Comprar ahora
 															</p>
 														</div>
 													))}
@@ -206,7 +206,7 @@ export const Header = () => {
 
 							{/* Logo */}
 							<div className="ml-4 flex lg:ml-0">
-								<a href="#">
+								<a href="/">
 									<span className="sr-only">Workflow</span>
 									<img className="h-8 sm:h-12 w-auto" src={logo} alt="" />
 								</a>

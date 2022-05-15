@@ -5,24 +5,36 @@ import { connectToDatabase } from "../../mongodb";
 import { Layout } from "../../components";
 import { DetailLayout } from "../../layouts";
 
+import fetch from "../../libs/fetch";
+import useSWR from "swr";
+
 interface Props {
 	product: IProduct;
 }
 
+const query = {
+	query: "query { getWearproducts { title image price slug } }"
+};
+
+const getData = async (...args: any[]) => {
+	return await fetch(query);
+};
+
 const DetailPage: NextPage<Props> = ({ product }) => {
-	const { products, isLoading } = useProduct("/wearproducts?category=men");
+	const { data, error } = useSWR(query, getData);
+	if (error) {
+		return <div>Error...</div>;
+	}
+	if (!data) {
+		return <div>Loading...</div>;
+	}
 	return (
 		<Layout
 			title={`${product.title}`}
 			pageDescription={`${product.description}`}
 			imageFullUrl={`${product.image[1]}`}
 		>
-			<DetailLayout
-				product={product}
-				products={products}
-				isLoading={isLoading}
-				subCategory="chamarras"
-			/>
+			<DetailLayout product={product} />
 		</Layout>
 	);
 };

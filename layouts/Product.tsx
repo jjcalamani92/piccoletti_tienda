@@ -4,11 +4,10 @@ import NextLink from "next/link";
 
 interface Props {
 	products: IProduct[];
-	isLoading: boolean;
 	title: string;
 }
 
-export const ProductLayout: FC<Props> = ({ products, isLoading, title }) => {
+export const ProductLayout: FC<Props> = ({ products, title }) => {
 	return (
 		<div className="bg-white">
 			<div className="max-w-2xl mx-auto px-4 sm:px-6 lg:max-w-7xl lg:px-8">
