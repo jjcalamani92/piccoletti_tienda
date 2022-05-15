@@ -2,7 +2,7 @@ const GRAPHQL_ENDPOINT = "http://localhost:3003/graphql";
 
 const headers = { "Content-Type": "application/json" };
 
-const _fetch = async (...args) => {
+const _fetch = async (...args: any[]) => {
 	const options = {
 		headers: headers,
 		method: "POST",
