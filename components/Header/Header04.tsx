@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { header, logo, pages } from "../../data.json";
 
 export const Header04 = () => {
-	const [show, setShow] = useState(null);
+	const [show, setShow] = useState(false);
 	const [profile, setProfile] = useState(false);
 	const [product, setProduct] = useState(false);
 	const [deliverables, setDeliverables] = useState(false);
@@ -153,7 +153,7 @@ export const Header04 = () => {
 											</li>
 										</ul>
 										<svg
-											onclick="MenuHandler(this,true)"
+											// onClick="MenuHandler(this,true)"
 											aria-haspopup="true"
 											aria-label="Main Menu"
 											xmlns="http://www.w3.org/2000/svg"
@@ -174,7 +174,7 @@ export const Header04 = () => {
 									</div>
 									<div
 										className="hidden close-m-menu text-gray-700"
-										onclick="MenuHandler(this,false)"
+										// onclick="MenuHandler(this,false)"
 									>
 										<svg
 											aria-label="Close"
