@@ -27,7 +27,7 @@ const Index: NextPage = () => {
 			{/* <TeamLayout /> */}
 			{/* <PricingLayout /> */}
 			{/* <ErrorLayout /> */}
-			<PrivacyAndTermsLayout />
+			{/* <PrivacyAndTermsLayout /> */}
 			{/* <Detail /> */}
 			{/* <Product /> */}
 			{/* <Category /> */}

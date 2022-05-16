@@ -2,7 +2,7 @@ import Head from "next/head";
 import { FC } from "react";
 import { Cart } from "./Cart";
 import { Footer } from "./Footer";
-import { Header } from "./Header";
+import { Header01, Header02, Header03 } from "./Header";
 
 interface Props {
 	title: string;
@@ -29,7 +29,9 @@ export const Layout: FC<Props> = ({
 				<meta property="og:type" content="og:product" />
 				{imageFullUrl && <meta property="og:image" content={imageFullUrl} />}
 			</Head>
-			<Header />
+			{/* <Header01 /> */}
+			{/* <Header02 /> */}
+			<Header03 />
 			<Cart />
 			<main>{children}</main>
 			<Footer />

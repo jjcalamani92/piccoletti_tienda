@@ -7,14 +7,14 @@ import {
 	ShoppingBagIcon,
 	XIcon
 } from "@heroicons/react/outline";
-import { UiContext } from "../context";
-import { header, logo, pages } from "../data.json";
+import { UiContext } from "../../context";
+import { header, logo, pages } from "../../data.json";
 
 function classNames(...classes: string[]) {
 	return classes.filter(Boolean).join(" ");
 }
 
-export const Header = () => {
+export const Header02 = () => {
 	const { isMenuOpen, toggleSideMenu } = useContext(UiContext);
 	const [open, setOpen] = useState(false);
 	return (
