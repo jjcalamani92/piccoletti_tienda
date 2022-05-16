@@ -1,5 +1,12 @@
 import type { NextPage } from "next";
-import { Layout, Quickviews, SwiperComponent } from "../components";
+import {
+	Form01,
+	Layout,
+	Pagination01,
+	Quickviews,
+	Search01,
+	SwiperComponent
+} from "../components";
 import {
 	BlogsLayout,
 	ContactLayout,
@@ -12,7 +19,8 @@ import {
 	Promo,
 	TeamLayout,
 	TestimonialLayout,
-	PrivacyAndTermsLayout
+	PrivacyAndTermsLayout,
+	TechnicalSpecifications
 } from "../layouts";
 
 const Index: NextPage = () => {
@@ -35,6 +43,10 @@ const Index: NextPage = () => {
 			{/* <Features /> */}
 			{/* <Promo /> */}
 			{/* <FAQs /> */}
+			{/* <Form01 /> */}
+			{/* <Pagination01 />
+			<Search01 /> */}
+			<TechnicalSpecifications />
 		</Layout>
 	);
 };

@@ -16,5 +16,6 @@ export * from "./PrivacyAndTerms";
 export * from "./Product";
 export * from "./Promo";
 export * from "./Team";
+export * from "./TechnicalSpecifications";
 export * from "./Testimonial";
 export * from "./Wishlists";
